@@ -1,12 +1,13 @@
 export const bee = "🐝"
 
-export async function test() {
-  const uvu = await import("uvu")
-  const assert = await import("uvu/assert")
-
-  uvu.test(`bee`, () => {
+/**
+ * @param {typeof import("uvu").test} t
+ * @param {typeof import("uvu/assert")} assert
+ */
+export async function test(t, assert) {
+  t(`bee`, () => {
     assert.equal(bee, "🐝")
   })
 
-  return uvu.test
+  return t
 }
