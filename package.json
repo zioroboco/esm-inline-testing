@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "license": "ISC",
   "type": "module",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "uvu src"
+    "prepublish": "pnpm run build",
+    "build": "esbuild ./src/index.js --bundle --format=esm --outfile=./dist/index.js",
+    "test": "node src/tests.js"
   },
   "devDependencies": {
+    "esbuild": "^0.14.29",
     "uvu": "^0.5.3"
   }
 }
