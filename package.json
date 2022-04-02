@@ -1,0 +1,10 @@
+{
+  "name": "@zioroboco/esm-inline-testing",
+  "version": "0.0.0",
+  "license": "ISC",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
