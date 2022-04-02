@@ -4,7 +4,10 @@
   "license": "ISC",
   "type": "module",
   "main": "src/index.js",
-  "scripts": {},
-  "devDependencies": {},
-  "dependencies": {}
+  "scripts": {
+    "test": "uvu src"
+  },
+  "devDependencies": {
+    "uvu": "^0.5.3"
+  }
 }
